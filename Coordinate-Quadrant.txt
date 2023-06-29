@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int main(){
+    int x;
+    int y;
+
+    printf("\nEnter the value for x (x>0 or x<0) = ");
+    scanf("%d",&x);
+
+    printf("\nEnter the value for y(y>0 or y<0) = ");
+    scanf("%d",&y);
+
+    if (x>0 && y>0)
+    {
+    printf("Quadrant-I(+,+)");
+    }
+    else if (x<0 && y>0)
+    {
+    printf("Quadrant-II(-,+)");
+    }
+    else if (x<0 && y<0)
+    {
+    printf("Quadrant-III(-,-)");
+    }
+    else if (x>0 && y<0)
+    {
+    printf("Quadrant-I(+,-)");
+    }
+    else if (x==0 && y==0)
+    {
+    printf("Wrong value entered!");
+    main();
+    }
+    else if (x==0 || y==0)
+    {
+    printf("Wrong value entered!");
+    main();
+    }
+}
